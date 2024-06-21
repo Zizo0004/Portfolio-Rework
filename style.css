@@ -69,20 +69,42 @@ span{
 }
 #List{
     width: 25%;
-    color: #ffffff;
+    cursor: pointer;
+    color: #c0c0c0;
     display: flex;
     justify-content: space-around;
 }
+#List > :nth-child(n){
+transition: color 1s ease;
+}
+
+#List > :nth-child(n)::after{
+    content: '';
+    display: flex;
+    width: 0%;
+    border: 2px solid #c79696;
+    opacity: 0;
+    transition: width 1s ease, opacity 1s ease, border-color 2s ease;
+    border-radius: 1%;
+}
+#List > :nth-child(n):hover::after{
+    width: 98%;
+    opacity: 100%;
+    border-color: #FF4F5C;
+}
+#List > :nth-child(n):hover{
+    color: #ffffff;
+}
+
+
 #Home{
     color: #ffffff;
 }
 #Main{
-    margin-top: 2.5%;
-    margin-bottom: 25%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     height: 88%;
 }
@@ -137,11 +159,11 @@ span{
     align-items: center;
 }
 #Projectsbutton:hover{
-    box-shadow: 0px 0px 105px #780000;
+    box-shadow: 0px 0px 120px #780000;
 }
 
 #Projectsbutton > :nth-child(n) {
-    margin: 5px 5px;
+    margin: 2% 2%;
 }
 #arrow{
     transform: rotate(90deg);
