@@ -165,4 +165,25 @@ transition: color 1s ease;
 #Projectsbutton > :nth-child(n) {
     margin: 2% 2%;
 }
-
+#projects{
+    position: relative;
+    right: 500px;
+    opacity: 0%;
+    animation: rightness 1s ease forwards, opactiness 2s ease forwards;
+}
+@keyframes rightness {
+    0%{
+        right: 500px;
+    }
+    100%{
+        right: 0px;
+    }
+}
+@keyframes opactiness {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}

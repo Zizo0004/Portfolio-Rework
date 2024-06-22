@@ -1,5 +1,14 @@
-projectsbutton = document.getElementById("Projectsbutton")
-arrow = document.getElementById("arrow")
-projectsbutton.addEventListener("click",function(){
-    arrow.classList.add("arrowmovement")
-});
+const callback = (entries,observer)=>{
+    console.log("HHELLLLOOOO")
+    for(entry of entries){
+        if(entry.isIntersecting){
+            console.log(`${entry} is intersecting`)
+        }
+        else{
+            console.log(`${entry} is NOT intersecting`)
+        }
+    }
+}
+const observer = new IntersectionObserver(callback)
+target = document.getElementById("projects")
+observer.observe(target)
