@@ -110,29 +110,29 @@ transition: color 1s ease;
 }
 #Name{
     height: 30%;
-    width: 57%;
-    font-size: 8rem;
+    width: 75%;
     font-weight: 800;
     letter-spacing: 1px;
     display: flex;
     flex-direction: column;
     justify-content: start;
     color: #ffffff;
+    margin-bottom: 10%;
 }
 #dev{
-    margin: 4px 0px;
-    font-size: 110% !important;
+    margin: 3px 0px;
+    font-size: 12rem;
     color: #A8DADC;
 }
 #ziyad{
-    margin: 4px 0px;
-    font-size: 80% !important;
+    margin: 3px 0px;
+    font-size: 10rem;
 }
 
 #Aboutme{
     color: #B5B5B5;
-    font-size: 4rem !important;
-    width:55%;
+    font-size: 5rem !important;
+    width:75%;
     letter-spacing: 2px;
 }
 
@@ -165,17 +165,4 @@ transition: color 1s ease;
 #Projectsbutton > :nth-child(n) {
     margin: 2% 2%;
 }
-#arrow{
-    transform: rotate(90deg);
-}
-.arrowmovement{
-    animation: arrowfunction 0.8s ease forwards;
-}
-@keyframes arrowfunction{
-    0%{
-        transform: rotate(90deg);
-    }
-    100%{
-        transform: rotate(270deg);
-    }
-}
+
