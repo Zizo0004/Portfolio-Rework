@@ -165,6 +165,22 @@ transition: color 1s ease;
 #Projectsbutton > :nth-child(n) {
     margin: 2% 2%;
 }
+#projects::after{
+    content: '';
+    display: flex;
+    width: 0%;
+    border: 2px solid red;
+    animation: highlighter 1s ease forwards;
+    animation-delay: 0.5s;
+}
+@keyframes highlighter {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
 #projects{
     position: relative;
     right: 500px;
