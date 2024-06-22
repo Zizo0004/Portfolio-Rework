@@ -2,7 +2,8 @@ const callback = (entries,observer)=>{
     console.log("HHELLLLOOOO")
     for(entry of entries){
         if(entry.isIntersecting){
-            console.log(`${entry} is intersecting`)
+            entry.target.classList.add("projectsanimation")
+            observer.unobserve(entry.target)
         }
         else{
             console.log(`${entry} is NOT intersecting`)
