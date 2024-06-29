@@ -23,3 +23,12 @@ for(img of imgs){
     observer.observe(img)
 }
 observer.observe(target)
+
+photos = document.getElementsByClassName("photo")
+
+for(photo of photos){
+    photo.addEventListener('mouseover',function(photo){
+        this.siblingNode.innerText = 'hello';
+    });
+}
+

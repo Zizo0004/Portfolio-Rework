@@ -26,7 +26,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: #14213D;
+    background-color: #14213D; 
     height: 300vh;
     width: 98vw;
 }
@@ -403,8 +403,10 @@ transition: color 1s ease;
 
 
 .verticalcontainer1 img, .verticalcontainer2 img, .horizontalcontainer1 img,.horizontalcontainer2 img{
+    color: #ff0000;
+    font-size: large;
     box-sizing: border-box;
-    opacity: 100%;
+    opacity: 55%;
     border: 5px solid rgb(124, 124, 124);  
     transition: opacity 1.5s ease 
 }
@@ -413,7 +415,7 @@ transition: color 1s ease;
 .horizontalcontainer1 img:hover, 
 .horizontalcontainer2 img:hover {
     border-color: white;
-    box-shadow: 0px 0px 50px grey;
+    box-shadow: 0px 0px 50px rgb(77, 77, 77);
     opacity: 100%;
 }
 
@@ -428,4 +430,11 @@ transition: color 1s ease;
     margin-bottom: 1rem;
     height: auto;
     object-fit: contain;
+}
+#baking{
+    height: 108px;
+}
+#baking ul{
+    overflow: hidden;
+    height: 100%;
 }
