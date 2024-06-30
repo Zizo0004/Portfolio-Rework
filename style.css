@@ -432,9 +432,31 @@ transition: color 1s ease;
     object-fit: contain;
 }
 #baking{
-    height: 108px;
+    height: 7px;
 }
 #baking ul{
+    font-family: 'cerebi',sans-serif;
     overflow: hidden;
+    font-size: 100px;
+    list-style-type:none;
     height: 100%;
+    position: relative;
+    font-style: c;
+    top: -1100px;
+    left: 400px;
+}
+#baking ul::after{
+    content: '';
+    display: block;
+    height: 100%;
+    width: 3%;
+    background-color: #780000;
+}
+.resumebutton{
+    position: relative;
+    top: 25rem;
+}
+#icons{
+    height: 7.5%;
+    width: 7.5%;
 }
